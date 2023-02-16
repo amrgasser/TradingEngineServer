@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>9</LangVersion>
+    <RootNamespace>TradingEngineServer.Instrument</RootNamespace>
+    <AssemblyName>TradingEngineServer.Instrument</AssemblyName>
+  </PropertyGroup>
+
+</Project>

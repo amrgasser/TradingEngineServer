@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>9</LangVersion>
+    <RootNamespace>TradingEngineServer.OrderBook</RootNamespace>
+    <AssemblyName>TradingEngineServer.OrderBook</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrdersCS\OrdersCS.csproj" />
+    <ProjectReference Include="..\InstrumentCS\InstrumentCS.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9</LangVersion>
+    <RootNamespace>TradingEngineServer.Core</RootNamespace>
+    <AssemblyName>TradingEngineServer.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.Extensions.Hosting" />
+    <None Remove="TradingEngineServerConfiguration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TradingEngineServerConfiguration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoggingCS\LoggingCS.csproj" />
+  </ItemGroup>
+</Project>
